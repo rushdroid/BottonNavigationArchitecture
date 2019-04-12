@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_home"
+    app:startDestination="@id/homeHostFragment">
+
+    <fragment
+        android:id="@+id/homeHostFragment"
+        android:name="com.rushdroid.myapplication.fragment.hostFragment.HomeHostFragment"
+        android:label="fragment_home2"
+        tools:layout="@layout/fragment_home2">
+        <action
+            android:id="@+id/toHomeInner"
+            app:destination="@id/homeInnerFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeInnerFragment"
+        android:name="com.rushdroid.myapplication.fragment.innerFragment.HomeInnerFragment"
+        android:label="fragment_home3"
+        tools:layout="@layout/fragment_home3"/>
+</navigation>

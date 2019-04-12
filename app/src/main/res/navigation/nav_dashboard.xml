@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_dashboard"
+    app:startDestination="@id/dashHostFragment">
+
+    <fragment
+        android:id="@+id/dashHostFragment"
+        android:name="com.rushdroid.myapplication.fragment.hostFragment.DashboardHostFragment"
+        android:label="fragment_dash2"
+        tools:layout="@layout/fragment_dash2" >
+        <action
+            android:id="@+id/toDashboardInner"
+            app:destination="@id/dashboardInner" />
+    </fragment>
+    <fragment
+        android:id="@+id/dashboardInner"
+        android:name="com.rushdroid.myapplication.fragment.innerFragment.DashBoardInnerFragment"
+        android:label="fragment_dsh3"
+        tools:layout="@layout/fragment_dsh3" />
+</navigation>

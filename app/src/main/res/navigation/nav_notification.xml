@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_notification"
+    app:startDestination="@id/notificationHostFragment">
+
+    <fragment
+        android:id="@+id/notificationHostFragment"
+        android:name="com.rushdroid.myapplication.fragment.hostFragment.NotificationHostFragment"
+        android:label="fragment_notification2"
+        tools:layout="@layout/fragment_notification2" >
+        <action
+            android:id="@+id/toNotificationInner"
+            app:destination="@id/notificationInner" />
+    </fragment>
+    <fragment
+        android:id="@+id/notificationInner"
+        android:name="com.rushdroid.myapplication.fragment.innerFragment.NotificationInnerFragment"
+        android:label="fragment_notif3"
+        tools:layout="@layout/fragment_notif3" />
+</navigation>
