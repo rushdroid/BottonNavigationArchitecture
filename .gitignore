@@ -41,6 +41,7 @@ captures/
 .idea/dictionaries
 .idea/libraries
 .idea/caches
+.idea*
 
 # Keystore files
 # Uncomment the following line if you do not want to check your keystore files in.
@@ -50,7 +51,7 @@ captures/
 .externalNativeBuild
 
 # Google Services (e.g. APIs or Firebase)
-google-services.json
+#google-services.json
 
 # Freeline
 freeline.py
@@ -63,3 +64,9 @@ fastlane/Preview.html
 fastlane/screenshots
 fastlane/test_output
 fastlane/readme.md
+.idea/inspectionProfiles/
+.idea/misc.xml
+.idea/modules.xml
+.idea/runConfigurations.xml
+.idea/vcs.xml
+app/libs/
