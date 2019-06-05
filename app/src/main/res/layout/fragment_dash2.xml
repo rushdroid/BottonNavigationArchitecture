@@ -9,6 +9,6 @@
     <Button
         android:id="@+id/btnPress"
         android:layout_width="match_parent"
-        android:text="Press it dah 2"
+        android:text="Move to Inner DashBoard"
         android:layout_height="wrap_content" />
 </FrameLayout>
